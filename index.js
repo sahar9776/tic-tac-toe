@@ -7,7 +7,7 @@ let x = "X";
 let o = "O";
 // Doz function
 function Doz(event, i) {
-    // Fill the cell with X
+  // Fill the cell with X
   if (flag === false) {
     cell[i].setAttribute("id", "x");
     cell[i].currentTarget = "X";
@@ -24,4 +24,8 @@ function Doz(event, i) {
     flag = false;
     cell[i].disabled = true;
   }
+}
+// Reset function
+function Reset() {
+  location.reload();
 }
