@@ -16,28 +16,63 @@
 }
 /* HEAD  */
 .head {
-    width: 50%;
-    height: 100px;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .head h2 {
-    font-size: 30px;
-    margin-right: 15px;
-  }
-  .resetBtn {
-    padding: 10px 15px;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    cursor: pointer;
-  }
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.head h2 {
+  font-size: 30px;
+  margin-right: 15px;
+}
+.resetBtn {
+  padding: 10px 15px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+/* BOARD : The body of the game  */
+.board {
+  width: 300px;
+  height: 300px;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  margin: auto;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+.cell:hover {
+  box-shadow: 1px 1px 1px #000;
+  transform: translateY(1%);
+}
+#x,
+#circle {
+  cursor: not-allowed;
+}
