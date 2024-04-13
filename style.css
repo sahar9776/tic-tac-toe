@@ -76,3 +76,34 @@
 #circle {
   cursor: not-allowed;
 }
+/* MESSAGE WIN  */
+#messageWin {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 9;
+  position: relative;
+}
+#messageWin img {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+#messageWin h1 {
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+#messageWin button {
+  color: #fff;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
