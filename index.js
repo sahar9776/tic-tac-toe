@@ -27,8 +27,8 @@ function Doz(event, i) {
   // check  conditions winner
   conditions();
 }
-// Reset function
-function Reset() {
+// Restart function
+function Restart() {
   location.reload();
 }
 // conditions function
