@@ -24,8 +24,72 @@ function Doz(event, i) {
     flag = false;
     cell[i].disabled = true;
   }
+  // check  conditions winner
+  conditions();
 }
 // Reset function
 function Reset() {
   location.reload();
+}
+// conditions function
+function conditions() {
+  //condition to win
+  if (
+    //Horizontal: X
+    (cell[0].currentTarget == "X" &&
+      cell[1].currentTarget == "X" &&
+      cell[2].currentTarget == "X") ||
+    (cell[3].currentTarget == "X" &&
+      cell[4].currentTarget == "X" &&
+      cell[5].currentTarget == "X") ||
+    (cell[6].currentTarget == "X" &&
+      cell[7].currentTarget == "X" &&
+      cell[8].currentTarget == "X") ||
+    //vertical: X
+    (cell[0].currentTarget == "X" &&
+      cell[3].currentTarget == "X" &&
+      cell[6].currentTarget == "X") ||
+    (cell[1].currentTarget == "X" &&
+      cell[4].currentTarget == "X" &&
+      cell[7].currentTarget == "X") ||
+    (cell[2].currentTarget == "X" &&
+      cell[5].currentTarget == "X" &&
+      cell[8].currentTarget == "X") ||
+    //cross: X
+    (cell[0].currentTarget == "X" &&
+      cell[4].currentTarget == "X" &&
+      cell[8].currentTarget == "X") ||
+    (cell[2].currentTarget == "X" &&
+      cell[4].currentTarget == "X" &&
+      cell[6].currentTarget == "X") ||
+    //Horizontal: O
+    (cell[0].currentTarget == "O" &&
+      cell[1].currentTarget == "O" &&
+      cell[2].currentTarget == "O") ||
+    (cell[3].currentTarget == "O" &&
+      cell[4].currentTarget == "O" &&
+      cell[5].currentTarget == "O") ||
+    (cell[6].currentTarget == "O" &&
+      cell[7].currentTarget == "O" &&
+      cell[8].currentTarget == "O") ||
+    //vertical: O
+    (cell[0].currentTarget == "O" &&
+      cell[3].currentTarget == "O" &&
+      cell[6].currentTarget == "O") ||
+    (cell[1].currentTarget == "O" &&
+      cell[4].currentTarget == "O" &&
+      cell[7].currentTarget == "O") ||
+    (cell[2].currentTarget == "O" &&
+      cell[5].currentTarget == "O" &&
+      cell[8].currentTarget == "O") ||
+    //cross: O
+    (cell[0].currentTarget == "O" &&
+      cell[4].currentTarget == "O" &&
+      cell[8].currentTarget == "O") ||
+    (cell[2].currentTarget == "O" &&
+      cell[4].currentTarget == "O" &&
+      cell[6].currentTarget == "O")
+  ) {
+    messageWin.style.display = "block";
+  }
 }
