@@ -107,3 +107,10 @@
   left: 50%;
   transform: translate(-50%, -80%);
 }
+/* responsive part  */
+@media screen and (max-width: 768px) {
+  .head {
+    width: 100%;
+    align-items: start;
+  }
+}
