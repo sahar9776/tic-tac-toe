@@ -4,8 +4,6 @@ let turn = document.getElementById("turn");
 let cell = document.getElementsByClassName("cell");
 let messageWin = document.getElementById("messageWin");
 let messageLost = document.getElementById("messageLost");
-let x = "X";
-let o = "O";
 // Doz function
 function Doz(event, i) {
   // Fill the cell with X
