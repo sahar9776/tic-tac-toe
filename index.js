@@ -3,6 +3,7 @@ let counter = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 let turn = document.getElementById("turn");
 let cell = document.getElementsByClassName("cell");
 let messageWin = document.getElementById("messageWin");
+let messageLost = document.getElementById("messageLost");
 let x = "X";
 let o = "O";
 // Doz function
@@ -90,6 +91,11 @@ function conditions() {
       cell[4].currentTarget == "O" &&
       cell[6].currentTarget == "O")
   ) {
-    messageWin.style.display = "block";
+    setTimeout(() => {
+      messageWin.style.display = "block";
+    }, 1500);
   }
+  setTimeout(() => {
+    messageLost.style.display = "block";
+  }, 20000);
 }

@@ -107,10 +107,45 @@
   left: 50%;
   transform: translate(-50%, -80%);
 }
+/* MESSAGE LOST  */
+#messageLost {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 9;
+  position: relative;
+  text-align: center;
+}
+#messageLost img {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+#messageLost h1 {
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+#messageLost button {
+  color: #fff;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
 /* responsive part  */
 @media screen and (max-width: 768px) {
   .head {
     width: 100%;
     align-items: start;
+  }
+  #messageLost h1{
+    font-size: 25px;
   }
 }
